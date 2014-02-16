@@ -9,9 +9,9 @@ var content = multiline(function() {/*
 
 	var WorkLena = LenaNiznik.extend({
 		defaults: {
-			mood:    'positive',
-			test:    'driven', 
-			catchphrase: 
+			mood: 'positive',
+			test: 'driven', 
+			persistent: true
 
 		},
 		initialize: function(){
