@@ -1,8 +1,11 @@
-//Comment out line 5 to see proper highlighting
+//Comment out line 5 to see JavaScript syntax highlighting
 
 var multiline = function(string) { return string.toString().replace(); };
 
-var homepage = multiline(function() {/*	
+var content = multiline(function() {/*	
+
+
+//------------------- START OF BODY TEXT ----------------------
 
 	var WorkLena = LenaNiznik.extend({
 		defaults: {
@@ -25,7 +28,7 @@ var homepage = multiline(function() {/*
 		    { 
 		      	name:    'Vitriol', 
 		    	url:     'http://vitriol.herokuapp.com', 
-		    	github:  'https://github.com/ebesser/fuchsia'
+		    	github:  'https://github.com/ebesser/fuchsia',
 		    	tagline: 'Because the internet needs more fights!', 
 		    	concept: 'A \'reddit\'-like forum for digital debate that fosters community by requiring that participants pick either the For or Against side of an argument, and literally take jabs at the opposing team.'
 	 		}
@@ -41,18 +44,18 @@ var homepage = multiline(function() {/*
 
 
 
-
+//---------------------- END OF BODY TEXT -------------------
 */});
 
 
-var rows = homepage.split("\n");
+var rows = content.split("\n");
 rows.shift();
-var new_array = [];
+var array = [];
 for( i = 1; i < rows.length-1; i++ ) {
-	new_array.push(i);
-	new_array.push(rows[i]);
+	array.push(i);
+	array.push(rows[i]);
 };
-homepage_text = new_array.join(" ").replace(/\s/g, '');
+body_text = array.join(" ").replace(/\s/g, '');
 
 
 
