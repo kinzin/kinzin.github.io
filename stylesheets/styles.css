@@ -1,0 +1,66 @@
+body{
+	background-color: #282622;
+  color:#DDDDDD;
+  font-family: 'Cutive Mono', serif;
+  text-indent: -6em;
+  padding-left: 6em;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF696;
+}
+
+a:hover{
+  background-color: #5B5A4E;
+}
+
+.grey {
+  color: #999999;
+  vertical-align: text-top;
+}
+
+.blue {
+  color: #52E3F6;
+}
+
+.green {
+  color: #73DF13;
+}
+
+.pink {
+  color: #FF007F;
+}
+
+.purple {
+  color: #AF89FF;
+}
+
+.white {
+  color: #fff;
+}
+.string {
+  color: #FFF696;
+}
+
+
+.l1 {
+  margin-left: 3em;
+}
+
+.l2 {
+  margin-left: 6em;
+}
+
+.l3 {
+  margin-left: 9em;
+}
+
+.l4 {
+  margin-left: 12em;
+}
+
+
+
+
+
