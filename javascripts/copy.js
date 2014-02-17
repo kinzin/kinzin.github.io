@@ -4,9 +4,6 @@ var multiline = function(string) { return string.toString().replace(); };
 
 var content = multiline(function() {/*	
 
-
-//------------------- START OF BODY TEXT ----------------------
-
 	var WorkLena = LenaNiznik.extend({
 		defaults: {
 			mood: 'positive',
@@ -23,7 +20,7 @@ var content = multiline(function() {/*
 		    	url:     'http://likes-me.herokuapp.com', 
 		    	github:  'https://github.com/kinzin/likes_me',
 		    	tagline: 'Find your best facebook photos!', 
-		    	concept: 'LikesMe solves the problem of not knowing which photos to post on a dating profiles or personal bio page. It uses facebook\'s graph API to pull your most recent photos and sort them based on \'Likes\' to find the most winning ones.'
+		    	concept: 'LikesMe solves the problem of not knowing which photos to post on a dating profile or personal bio page. It uses facebook\'s graph API to pull your most recent photos and sort them based on \'Likes\' to find the most winning ones.'
 		    }, 
 		    { 
 		      	name:    'Vitriol', 
@@ -44,7 +41,7 @@ var content = multiline(function() {/*
 
 
 
-//---------------------- END OF BODY TEXT -------------------
+
 */});
 
 
