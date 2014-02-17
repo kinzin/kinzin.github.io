@@ -8,8 +8,8 @@ var content = multiline(function() {/*
 		defaults: {
 			mood: 'positive',
 			test: 'driven', 
-			persistent: true
-
+			persistent: true,
+			contactInfo: { email: 'yniznik@gmail.com', github: '/kinzin', linkedin: '/yniznik' }
 		},
 		initialize: function(){
             drink(coffee( self.weight ));
@@ -35,9 +35,9 @@ var content = multiline(function() {/*
 	var WorkLenaView = LenaNiznik.View.extend({
 		openResume: function(){
 		   window.open('resume.pdf','_newtab');
-		},
-		contactInfo: { email: 'yniznik@gmail.com', github: '/kinzin', linkedin: '/yniznik'}
+		}
 	});
+
 
 
 
