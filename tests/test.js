@@ -1,5 +1,5 @@
-describe('index', function(){
-  it('renders the copy text exactly', function(){
+describe('when index page loads', function(){
+  it('the copy text is rendered exactly', function(){
     ($('#sublime_text').text()
       .replace(/\t/g, '')
       .replace(/\n/g, '')
