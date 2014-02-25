@@ -1,72 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LenaNiz.com</title>
+	<title>lenaniz.com</title>
 	<link href="stylesheets/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="tests/lib/mocha.css" />
 	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 
+	<!-- Get jQuery -->
+  <script src="libraries/jquery.js"></script>
+	<script src="javascripts/typed.js" type="text/javascript"></script>
+	<script>
+	$(function(){
+		$("#typed").typed({
+			strings: ["Welcome to my site.", "var WorkLena = LenaNiznik.extend()"],
+			typeSpeed: 30,
+			backDelay: 500,
+			loop: false,
+			// defaults to false for infinite loop
+			loopCount: false,
+			callback: function(){ foo(); }
+		});
+
+		function foo(){ console.log("Callback"); }
+
+		$(document).keyup(function(event){
+    if(event.keyCode == 13){
+        console.log('enter key pressed');
+    }
+});
+
+	});
+	</script>
+	<style>
+		/* code for animated blinking cursor */
+		#typed-cursor{
+			opacity: 1;
+			font-weight: 100;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			-ms-animation: blink 0.7s infinite;
+			-o-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
+		}
+		@-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-ms-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-o-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+	</style>
 </head>
 
 <body>
 
+  <!-- <div class="wrap"> -->
+		<!-- <div class="type-wrap"> -->
+			<!-- <span id="typed"></span> -->
+		<!-- </div> -->
+	<!-- </div> -->
+
 	<table id="sublime_text">
 		<tr>
-			<td class="grey">&nbsp1</td>
+			<td class="grey vis">&nbsp1</td>
 			<td>
+				<span id="typed" class="vis"></span>
 				<div class="l1"><span  class="blue">var</span> WorkLena <span  class="pink">=</span> LenaNiznik.extend({</div>
+
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp2</td>
+			<td class="grey vis">&nbsp2</td>
 			<td>
 				<div class="l2">	defaults: {</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp3</td>
+			<td class="grey vis">&nbsp3</td>
 			<td>
 				<div class="l3">	    mood: <span class="string">'positive'</span>,</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp4</td>
+			<td class="grey vis">&nbsp4</td>
 			<td>
 				<div class="l3">	    test: <span class="string">'driven'</span>,</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp5</td>
+			<td class="grey vis">&nbsp5</td>
 			<td>
 				<div class="l3">	    persistent: <span class="purple">true</span>,</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp6</td>
+			<td class="grey vis">&nbsp6</td>
 			<td>	
 				<div class="l3">contactInfo: { email: <span class="string">'yniznik@gmail.com'</span>, github: <span class="string">'<a href="https://github.com/kinzin" target="_blank">/kinzin</a>'</span>, linkedin: <span class="string">'<a href="http://www.linkedin.com/in/yniznik" target="_blank">/yniznik</a>'</span> }
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp7</td>
+			<td class="grey vis">&nbsp7</td>
 			<td>
 				<div class="l2">    },</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp8</td>
+			<td class="grey vis">&nbsp8</td>
 			<td>
 				<div class="l2">    <span  class="green">initialize</span>: <span  class="blue">function</span>(){</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">&nbsp9</td>
+			<td class="grey vis">&nbsp9</td>
 			<td>
 				<div class="l3">drink(coffee( self.weight ));</div>
 			</td>
 		</tr>
 		<tr>
-			<td class="grey">10</td>
+			<td class="grey vis">10</td>
 			<td>
 				<div class="l2">    },</div>
 			</td>
@@ -232,31 +302,25 @@
 	
 	</table>
 
-	<!--  _____TO RUN TESTS: UNCOMMENT LINES 237 and 258_____ -->
+	<!--  _____TO RUN TESTS: UNCOMMENT THIS BLOCK_____ -->
 
-    <div id="mocha"></div>
+  <!-- <div id="mocha"></div> 
 
-	<!-- In browser testing js -->
 	<script src="tests/lib/mocha.js"></script> 
 	<script src="tests/lib/should.js"></script> 
 
-
-	<!-- Load in all the project's js -->
 	<script src="libraries/jquery.js"></script>
 	<script src="libraries/underscore.js"></script>
 	<script src="libraries/backbone.js"></script>
 	<script src="javascripts/copy.js"></script> 
 
-
 	<script>mocha.setup('bdd')</script>
 
-
-	<!-- Load in your tests -->
 	<script src="tests/test.js"></script> 
 
 	<script> 
 		mocha.run(); 
-	</script>
+	</script> -->
 
 </body>
 </html>

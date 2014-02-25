@@ -1,9 +1,14 @@
-table {
-	background-color: #282622;
+html, body {
+  background-color: #282622;
+}
+
+
+#sublime_text {
   color: #E4E4E4;
   font-family: 'Cutive Mono', 'Courier New', serif;
   text-indent: -6em;
   padding-left: 6em;
+  visibility: hidden;
 }
 
 #sublime_text a {
@@ -14,6 +19,10 @@ table {
 
 #sublime_text a:hover {
   background-color: #282622;
+}
+
+.vis{
+  visibility: visible;
 }
 
 .grey {
@@ -60,8 +69,5 @@ table {
 .l4 {
   margin-left: 6em;
 }
-
-
-
 
 
