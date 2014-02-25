@@ -8,6 +8,8 @@ html, body {
   text-indent: -6em;
   padding-left: 6em;
   visibility: hidden;
+  table-layout: fixed;
+  width:100%;
 }
 
 #sublime_text a {
