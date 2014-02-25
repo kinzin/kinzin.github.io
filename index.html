@@ -23,13 +23,19 @@
 		function foo(){ console.log("Callback"); }
 
 		$(document).keyup(function(event){
-    // if(event.keyCode == 13){
-        console.log('keyUp');
-        $('#typed').remove();
-        $('#typed-cursor').remove();
-        $('#sublime_text').css('visibility', 'visible');
-    // }
+      console.log('key pressed');
+      $('#typed').remove();
+      $('#typed-cursor').remove();
+      $('#sublime_text').css('visibility', 'visible');
     });
+
+		$(document).click(function(){
+			console.log('mouse click');
+      $('#typed').remove();
+      $('#typed-cursor').remove();
+      $('#sublime_text').css('visibility', 'visible');
+    });
+
 
 	});
 	</script>
