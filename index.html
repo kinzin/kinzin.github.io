@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="tests/lib/mocha.css" />
 	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 
-	<!-- Get jQuery -->
   <script src="libraries/jquery.js"></script>
 	<script src="javascripts/typed.js" type="text/javascript"></script>
+	
 	<script>
 	$(function(){
 		$("#typed").typed({
@@ -16,7 +16,6 @@
 			typeSpeed: 30,
 			backDelay: 500,
 			loop: false,
-			// defaults to false for infinite loop
 			loopCount: false,
 			callback: function(){ foo(); }
 		});
@@ -24,10 +23,13 @@
 		function foo(){ console.log("Callback"); }
 
 		$(document).keyup(function(event){
-    if(event.keyCode == 13){
-        console.log('enter key pressed');
-    }
-});
+    // if(event.keyCode == 13){
+        console.log('keyUp');
+        $('#typed').remove();
+        $('#typed-cursor').remove();
+        $('#sublime_text').css('visibility', 'visible');
+    // }
+    });
 
 	});
 	</script>
@@ -35,6 +37,8 @@
 		/* code for animated blinking cursor */
 		#typed-cursor{
 			opacity: 1;
+			color: #E4E4E4;
+			visibility: visible;
 			font-weight: 100;
 			-webkit-animation: blink 0.7s infinite;
 			-moz-animation: blink 0.7s infinite;
@@ -72,18 +76,12 @@
 
 <body>
 
-  <!-- <div class="wrap"> -->
-		<!-- <div class="type-wrap"> -->
-			<!-- <span id="typed"></span> -->
-		<!-- </div> -->
-	<!-- </div> -->
-
 	<table id="sublime_text">
 		<tr>
 			<td class="grey vis">&nbsp1</td>
 			<td>
 				<span id="typed" class="vis"></span>
-				<div class="l1"><span  class="blue">var</span> WorkLena <span  class="pink">=</span> LenaNiznik.extend({</div>
+				<span class="l1"><span  class="blue">var</span> WorkLena <span  class="pink">=</span> LenaNiznik.extend({</span>
 
 			</td>
 		</tr>
@@ -291,14 +289,6 @@
 			<td class="grey">36</td>
 			<td></td>
 		</tr>
-		<tr>
-			<td class="grey">37</td>
-			<td></td>
-		</tr>		
-		<tr>
-			<td class="grey">38</td>
-			<td></td>
-		</tr>
 	
 	</table>
 
@@ -309,7 +299,6 @@
 	<script src="tests/lib/mocha.js"></script> 
 	<script src="tests/lib/should.js"></script> 
 
-	<script src="libraries/jquery.js"></script>
 	<script src="libraries/underscore.js"></script>
 	<script src="libraries/backbone.js"></script>
 	<script src="javascripts/copy.js"></script> 
