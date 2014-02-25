@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>lenaniz.com</title>
+	<title>lenaNIZ</title>
 	<link href="stylesheets/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="tests/lib/mocha.css" />
 	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
@@ -22,20 +22,28 @@
 
 		function foo(){ console.log("Callback"); }
 
-		$(document).keyup(function(event){
-      console.log('key pressed');
+		function reveal_text() {
+			console.log('key pressed');
       $('#typed').remove();
       $('#typed-cursor').remove();
       $('#sublime_text').css('visibility', 'visible');
+		}
+
+		$(document).keyup(function(event){
+      reveal_text();
     });
 
 		$(document).click(function(){
-			console.log('mouse click');
-      $('#typed').remove();
-      $('#typed-cursor').remove();
-      $('#sublime_text').css('visibility', 'visible');
+			reveal_text();
     });
 
+    $(document).click(function(){
+			reveal_text();
+    });
+
+		setTimeout(function(){
+			reveal_text();
+		},10000);
 
 	});
 	</script>
