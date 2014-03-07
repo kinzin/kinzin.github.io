@@ -5,11 +5,11 @@ html, body {
 #sublime_text {
   color: #E4E4E4;
   font-family: 'Cutive Mono', 'Courier New', serif;
-  text-indent: -6em;
+  text-indent: -7em;
   padding-left: 6em;
   visibility: hidden;
   table-layout: fixed;
-  width:100%;
+  width: 100%;
 }
 
 #sublime_text a {

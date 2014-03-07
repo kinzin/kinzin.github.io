@@ -12,22 +12,32 @@ var content = multiline(function() {/*
 			contactInfo: { email: 'yniznik@gmail.com', github: '/kinzin', linkedin: '/yniznik' }
 		},
 		initialize: function(){
-            drink(coffee( self.weight ));
+      drink(new Coffee( self.weight ));
 		},
 		projects: [
+			{ 
+ 			  name:    'Secret Sauce @ Spoon University', 
+ 			  snapshot:'/secret-sauce.png'
+	    	url:     'http://secret-sauce.herokuapp.com', 
+	    	github:  'https://github.com/sarahadler/secret-sauce',
+	    	tagline: 'Get rolling with Spoon U!',
+	    	concept: 'An e-learning and management tool for staff of Spoon University, a food website and network for college students with chapters on 30+ campuses across the country.'
+	    }, 
 	 		{ 
-	 			name:    'LikesMe', 
-		    	url:     'http://likes-me.herokuapp.com', 
-		    	github:  'https://github.com/kinzin/likes_me',
-		    	tagline: 'Find your best facebook photos!', 
-		    	concept: 'LikesMe solves the problem of not knowing which photos to post on a dating profile or personal bio page. It uses facebook\'s graph API to pull your most recent photos and sort them based on \'Likes\' to find the most winning ones.'
-		    }, 
-		    { 
-		      	name:    'Vitriol', 
-		    	url:     'http://vitriol.herokuapp.com', 
-		    	github:  'https://github.com/ebesser/fuchsia',
-		    	tagline: 'Because the internet needs more fights!', 
-		    	concept: 'A \'reddit\'-like forum for digital debate that fosters community by requiring that participants pick either the For or Against side of an argument, and literally take jabs at the opposing team.'
+ 			  name:    'LikesMe', 
+ 			  snapshot:'/likes-me.png'
+	    	url:     'http://likes-me.herokuapp.com', 
+	    	github:  'https://github.com/kinzin/likes_me',
+	    	tagline: 'Find your best facebook photos!',
+	    	concept: 'LikesMe solves the problem of not knowing which photos to post on a dating profile or personal bio page. It uses facebook\'s graph API to pull your most recent photos and sort them based on \'Likes\' to find the most winning ones.'
+	    }, 
+	    { 
+	      name:    'Vitriol', 
+	      snapshot:'/vitriol.png'
+	    	url:     'http://vitriol.herokuapp.com', 
+	    	github:  'https://github.com/ebesser/fuchsia',
+	    	tagline: 'Because the internet needs more fights!', 
+	    	concept: 'A \'reddit\'-like forum for digital debate that fosters community by requiring that participants pick either the For or Against side of an argument, and literally take jabs at the opposing team.'
 	 		}
 	    ] 
 	});
