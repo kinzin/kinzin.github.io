@@ -21,7 +21,7 @@ var content = multiline(function() {/*
 	    	url:     'http://secret-sauce.herokuapp.com', 
 	    	github:  'https://github.com/sarahadler/secret-sauce',
 	    	tagline: 'Get rolling with Spoon U!',
-	    	concept: 'An e-learning and management tool for staff of Spoon University, a food website and network for college students with chapters on 30+ campuses across the country.'
+	    	concept: 'Secret Sauce is an interactive web-based orientation program that trains college students in everything they need to know to effectively participate in and lead a Spoon University chapter. Spoon University is a food website and network for students with chapters on 30+ campuses across the country.'
 	    }, 
 	 		{ 
  			  name:    'LikesMe', 
