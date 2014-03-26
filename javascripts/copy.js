@@ -18,7 +18,7 @@ var content = multiline(function() {/*
 			{ 
  			  name:    'Secret Sauce @ Spoon University', 
  			  snapshot:'/secret-sauce.png'
-	    	url:     'http://secret-sauce.herokuapp.com', 
+	    	url:     'http://spoonuniversityX.com', 
 	    	github:  'https://github.com/sarahadler/secret-sauce',
 	    	tagline: 'Get rolling with Spoon U!',
 	    	concept: 'An internal e-training tool for all student members of Spoon University, a food website and network for students with chapters on 30+ campuses across the country. The Secret Sauce app functions as the student\'s orientation, tracks progress, and provides networking resources and ideas throughout the student\'s time at Spoon University.'
