@@ -1,25 +1,31 @@
 html, body {
-  background-color: #282622;
+  background-color: #171717;
 }
 
 #sublime_text {
   color: #E4E4E4;
-  font-family: 'Cutive Mono', 'Courier New', serif;
-  text-indent: -7em;
+  font-family: 'Droid Sans Mono', 'Courier New', serif;
+  font-size: 14px;
   padding-left: 7em;
-  visibility: hidden;
   table-layout: fixed;
+  visibility: hidden;
   width: 100%;
 }
 
 #sublime_text a {
   text-decoration: none;
-  color: #FFF696;
-  background-color: #5B5A4E;
+  color: #BDBC98;
+  background-color: #333233;
 }
 
 #sublime_text a:hover {
-  background-color: #282622;
+  background-color: #171717;
+}
+
+table {
+  border-spacing: 0;
+  position: absolute;
+  left: -98px;
 }
 
 .vis{
@@ -27,13 +33,17 @@ html, body {
 }
 
 .grey {
-  color: #999999;
-  width: 5em;
+  background-color: #252525;
+  width: 2em;
   vertical-align: text-top;
 }
 
 .blue {
-  color: #52E3F6;
+  color: #6EDFFF;
+}
+
+.orange {
+  color: #FF9A00;
 }
 
 .green {
@@ -53,7 +63,7 @@ html, body {
 }
 
 .string {
-  color: #FFF696;
+  color: #BDBC98;
 }
 
 .l1 {
@@ -71,5 +81,3 @@ html, body {
 .l4 {
   margin-left: 6em;
 }
-
-

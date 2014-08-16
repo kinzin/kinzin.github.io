@@ -2,14 +2,14 @@
 
 var multiline = function(string) { return string.toString().replace(); };
 
-var content = multiline(function() {/*	
+var content = multiline(function() {/*
 
-	var WorkLena = LenaNiznik.extend({
+	var WorkLena = LenaFeldberg.extend({
 		defaults: {
 			mood: 'positive',
 			test: 'driven', 
 			persistent: true,
-			contactInfo: { email: 'yniznik@gmail.com', github: '/kinzin', linkedin: '/yniznik' }
+			contactInfo: { email: 'lenafeldberg@gmail.com', github: '/kinzin', linkedin: '/yfeldberg' }
 		},
 		initialize: function(){
       drink(new Coffee( self.weight ));
@@ -42,7 +42,7 @@ var content = multiline(function() {/*
 	    ] 
 	});
 
-	var WorkLenaView = LenaNiznik.View.extend({
+	var WorkLenaView = LenaFeldberg.View.extend({
 		openResume: function(){
 		   window.open('resume.pdf','_newtab');
 		}
